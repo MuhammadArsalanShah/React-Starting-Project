@@ -1,73 +1,65 @@
-import reactImg from "./assets/react-core-concepts.png";
-import { CORE_CONCEPTS } from "./data.js";
+// import reactImg from "./assets/react-core-concepts.png";
+// import { CORE_CONCEPTS } from "./data.js";
 
-console.log('this is img: ',reactImg);
+// console.log('this is img: ',reactImg);
 
-const reactDescriptions = ['Fundamental', 'Crucial', 'Core'];
+// const reactDescriptions = ['Fundamental', 'Crucial', 'Core'];
 
-function genRandomNum(max) {
-  return Math.floor(Math.random() * (max + 1));
-}
+// function genRandomNum(max) {
+//   return Math.floor(Math.random() * (max + 1));
+// }
 
-// function CoreConcept(props) {
+// // function CoreConcept(props) {... instead of this sytax use the below one
+
+// function CoreConcept({image, title, description}) {
 //   return (
 //     <li>
-//       <img src={props.image} alt={props.title} />
-//       <h3>{props.title}</h3>
-//       <p>{props.description}</p>
+//       <img src={image} alt={title} />
+//       <h3>{title}</h3>
+//       <p>{description}</p>
 //     </li>
 //   );  
 // }
 
-function CoreConcept({image, title, description}) {
-  return (
-    <li>
-      <img src={image} alt={title} />
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </li>
-  );  
-}
+// function Header() {
+//   const description = reactDescriptions[genRandomNum(reactDescriptions.length - 1)];
 
-function Header() {
-  const description = reactDescriptions[genRandomNum(reactDescriptions.length - 1)];
+//   return (
+//     <header>
+//       <img src={reactImg} alt="Stylized atom" />
+//       <h1>React Essentials</h1>
+//       <p>
+//         {description} React concepts you will need for almost any app you are
+//         going to build!
+//       </p>
+//     </header>
+//   );
+// }
 
-  return (
-    <header>
-      <img src={reactImg} alt="Stylized atom" />
-      <h1>React Essentials</h1>
-      <p>
-        {description} React concepts you will need for almost any app you are
-        going to build!
-      </p>
-    </header>
-  );
-}
+// function App() {
+//   return (
+//     <div>
+//       <Header />
+//       <main>
+//         <section id="core-concepts">
+//           <h2>Core Concepts</h2>
+//           <ul>
+//             <CoreConcept {...CORE_CONCEPTS[0]}/>
+//             <CoreConcept {...CORE_CONCEPTS[1]}/>
+//             <CoreConcept {...CORE_CONCEPTS[2]}/>
+//             <CoreConcept 
+//               title={CORE_CONCEPTS[3].title} 
+//               description={CORE_CONCEPTS[3].description} 
+//               image={CORE_CONCEPTS[3].image}
+//             />
+//           </ul>
+//         </section>
+//       </main>
+//     </div>
+//   );
+// }
 
-function App() {
-  return (
-    <div>
-      <Header />
-      <main>
-        <section id="core-concepts">
-          <h2>Core Concepts</h2>
-          <ul>
-            <CoreConcept {...CORE_CONCEPTS[0]}/>
-            <CoreConcept {...CORE_CONCEPTS[1]}/>
-            <CoreConcept {...CORE_CONCEPTS[2]}/>
-            <CoreConcept 
-              title={CORE_CONCEPTS[3].title} 
-              description={CORE_CONCEPTS[3].description} 
-              image={CORE_CONCEPTS[3].image}
-            />
-          </ul>
-        </section>
-      </main>
-    </div>
-  );
-}
-
-export default App;
+// export default App;
 
 
 
@@ -114,3 +106,38 @@ function App() {
 
 export default App;
 */
+
+/**** Coding Exercise 5 ****/
+export function CourseGoal({title, description}) {
+  return (
+    <li>
+      <h2>{title}</h2>
+      <p>{description}</p>
+    </li>
+  );
+}
+
+function App() {
+  return (
+    <div id="app" data-testid="app">
+      <h1>Time to Practice</h1>
+      <p>One course, many goals! 🎯</p>
+      <ul>
+        <CourseGoal 
+          title="Learn React"
+          description="In-depth"
+        />
+        <CourseGoal 
+          title="Learn Next.js"
+          description="In-depth for future"
+        />
+        <CourseGoal 
+          title="Learn TypeScript"
+          description="In-depth and for Next.js"
+        />
+      </ul>
+    </div>
+  );
+}
+
+export default App;

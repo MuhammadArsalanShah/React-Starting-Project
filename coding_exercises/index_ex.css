@@ -1,4 +1,92 @@
-/***** Coding exercise 5 CSS *****/
+/***** Coding exercise 7 CSS *****/
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Lato:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(#cfb3f3, #c59afa);
+  color: #e5d9f1;
+  min-height: 100vh;
+}
+
+#app {
+  margin: 2rem auto;
+  padding: 0.5rem 2rem;
+  max-width: 25rem;
+  text-align: center;
+  border-radius: 6px;
+  background: linear-gradient(#230736, #301247);
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+h1 {
+  letter-spacing: 0.1rem;
+  font-size: 1.25rem;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+  color: #c7a0ee;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  text-align: left;
+  color: #9f80bf;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  border: 1px solid #493066;
+  background: #493664;
+  color: #e5d9f1;
+  font-size: 0.9rem;
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+button {
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  border: 1px solid #5812b9;
+  background: #5812b9;
+  color: #e5d9f1;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #6c1fd6;
+} */
+
+
+
+/***** Coding exercise 6 CSS *****/
 /* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Lato:wght@400;700&display=swap');
 
 * {
@@ -41,65 +129,6 @@ body {
   text-decoration: none;
 } */
 
-
-
-
-/***** Coding exercise 4 CSS *****/
-/* #app {
-  margin: 2rem auto;
-  padding: 1rem;
-  max-width: 40rem;
-  text-align: center;
-  border-radius: 6px;
-  background: linear-gradient(#1f1d25, #17131c);
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-}
-
-h1 {
-  letter-spacing: 0.15rem;
-  font-family: 'Lato', sans-serif;
-  text-transform: uppercase;
-  margin-bottom: 2.5rem;
-}
-
-#user {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 2rem auto;
-  padding: 1rem;
-  border-radius: 8px;
-  background: linear-gradient(#faca71, #fae571);
-  color: #1f1d25;
-  max-width: 20rem;
-  animation: pulse 2s infinite;
-}
-
-#user h2 {
-  text-transform: uppercase;
-  margin: 0.25rem 0;
-  font-size: 1.15rem;
-  font-weight: normal;
-}
-
-#user p {
-  margin: 0;
-  font-size: 0.9rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(250, 229, 113, 0.7);
-  }
-  50% {
-    box-shadow: 0 0 0 10px rgba(250, 229, 113, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(250, 229, 113, 0);
-  }
-} */
 
 
 /***** Coding exercise 5 CSS *****/
@@ -174,4 +203,63 @@ li h2 {
 li p {
   font-size: 0.9rem;
   color: #474034;
+} */
+
+
+
+/***** Coding exercise 4 CSS *****/
+/* #app {
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 40rem;
+  text-align: center;
+  border-radius: 6px;
+  background: linear-gradient(#1f1d25, #17131c);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  letter-spacing: 0.15rem;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+
+#user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 8px;
+  background: linear-gradient(#faca71, #fae571);
+  color: #1f1d25;
+  max-width: 20rem;
+  animation: pulse 2s infinite;
+}
+
+#user h2 {
+  text-transform: uppercase;
+  margin: 0.25rem 0;
+  font-size: 1.15rem;
+  font-weight: normal;
+}
+
+#user p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(250, 229, 113, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(250, 229, 113, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(250, 229, 113, 0);
+  }
 } */

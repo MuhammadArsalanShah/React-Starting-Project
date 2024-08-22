@@ -1,3 +1,29 @@
+/**** Coding Exercise 11 ****/
+// import React from 'react';
+
+// // don't change the Component name "App"
+// export default function App() {
+    
+//     const [isActive, setIsActive] = React.useState(false)
+    
+//     function handleClick () {
+//         if (isActive === false) {
+//           setIsActive(true)  
+//         } else {
+//             setIsActive(false)
+//         }
+//     }
+    
+//     return (
+//         <div>
+//             <p className={isActive ? 'active' : undefined}>Style me!</p>
+//             <button onClick={handleClick}>Toggle style</button>
+//         </div>
+//     );
+// }
+
+
+
 /**** Coding Exercise 10 ****/
 /*
 import React from 'react';

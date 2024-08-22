@@ -1,3 +1,35 @@
+/**** Coding Exercise 10 ****/
+/*
+import React from 'react';
+
+// don't change the Component name "App"
+export default function App() {
+    
+    const [showAlert, setShowAlert] = React.useState(false)
+    
+    function handleClick (value) {
+        value ? setShowAlert(true) : setShowAlert(false);
+    }
+  
+    
+    return (
+      <div>
+        
+        {showAlert && ( 
+            <div data-testid="alert" id="alert">
+              <h2>Are you sure?</h2>
+              <p>These changes can't be reverted!</p>
+              <button onClick={() => handleClick(false)}>Proceed</button>
+            </div>
+        )}
+        
+        <button onClick={() => handleClick(true)}>Delete</button>
+      </div>    
+    );
+}
+*/
+
+
 /**** Coding Exercise 9 ****/
 /*
 // IMPORTANT: You CAN'T import & use useState like this in this Udemy environment

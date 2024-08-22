@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { CORE_CONCEPTS } from "./data.js";
+import { CORE_CONCEPTS, EXAMPLES } from "./data.js";
 import Header from "./components/Header/Header.jsx";
 import CoreConcept from "./components/CoreConcept.jsx";
 import TabButton from "./components/TabButton.jsx";
@@ -9,11 +9,10 @@ function App() {
 
   console.log('APP Component Running')
 
-  const [seletedTopic, setSelectedTopic] = useState('Please click a button to see content!');
+  const [seletedTopic, setSelectedTopic] = useState('components');
 
   function handleSelect(selectedButton) {
     setSelectedTopic(selectedButton);
-    console.log("From handleSelect function:",seletedTopic);
   }
 
   return (
@@ -41,7 +40,13 @@ function App() {
             <TabButton onSelect={() => handleSelect('props')}>Props</TabButton>
             <TabButton onSelect={() => handleSelect('state')}>State</TabButton>
           </menu>
-          {seletedTopic}
+          <div id='tab-content'>
+            <h3>{EXAMPLES[seletedTopic].title}</h3>
+            <p>{EXAMPLES[seletedTopic].description}</p>
+            <pre>
+              <code>{EXAMPLES[seletedTopic].code}</code>
+            </pre>
+          </div>
         </section>
       </main>
     </div>

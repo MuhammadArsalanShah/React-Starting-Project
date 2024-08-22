@@ -1,3 +1,35 @@
+/**** Coding Exercise 8 ****/
+/*
+export const user = {
+  name: '',
+};
+
+function App() {
+  // Your goal: This function should be called WITH A VALUE for name when the <button> is clicked
+  function handleCreateUser(name) {
+    user.name = name;
+  }
+
+  return (
+    <div id="app">
+      <h1>User Login</h1>
+      <p>
+        <label>Name</label>
+                <input type="text" />
+      </p>
+
+      <p id="actions">
+        <button onClick={() => handleCreateUser("userName")}>Create User</button>
+      </p>
+    </div>
+  );
+}
+
+export default App;
+*/
+
+
+
 /**** Coding Exercise 7 ****/
 /*
 // Your goal is to change the email, password and loggedIn values when the button in the App component is pressed

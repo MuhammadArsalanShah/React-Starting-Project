@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -147,7 +147,7 @@ main h2 {
 
 #tab-content code {
   font-size: 1rem;
-} */
+}
 
 
 /***** Coding exercise 4 CSS *****/
@@ -209,7 +209,7 @@ h1 {
 
 
 /***** Coding exercise 5 CSS *****/
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Lato:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Lato:wght@400;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -280,4 +280,4 @@ li h2 {
 li p {
   font-size: 0.9rem;
   color: #474034;
-}
+} */

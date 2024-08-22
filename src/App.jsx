@@ -1,65 +1,31 @@
-// import reactImg from "./assets/react-core-concepts.png";
-// import { CORE_CONCEPTS } from "./data.js";
+import { CORE_CONCEPTS } from "./data.js";
+import Header from "./components/Header.jsx";
+import CoreConcept from "./components/CoreConcept.jsx";
 
-// console.log('this is img: ',reactImg);
+function App() {
+  return (
+    <div>
+      <Header />
+      <main>
+        <section id="core-concepts">
+          <h2>Core Concepts</h2>
+          <ul>
+            <CoreConcept {...CORE_CONCEPTS[0]}/>
+            <CoreConcept {...CORE_CONCEPTS[1]}/>
+            <CoreConcept {...CORE_CONCEPTS[2]}/>
+            <CoreConcept 
+              title={CORE_CONCEPTS[3].title} 
+              description={CORE_CONCEPTS[3].description} 
+              image={CORE_CONCEPTS[3].image}
+            />
+          </ul>
+        </section>
+      </main>
+    </div>
+  );
+}
 
-// const reactDescriptions = ['Fundamental', 'Crucial', 'Core'];
-
-// function genRandomNum(max) {
-//   return Math.floor(Math.random() * (max + 1));
-// }
-
-// // function CoreConcept(props) {... instead of this sytax use the below one
-
-// function CoreConcept({image, title, description}) {
-//   return (
-//     <li>
-//       <img src={image} alt={title} />
-//       <h3>{title}</h3>
-//       <p>{description}</p>
-//     </li>
-//   );  
-// }
-
-// function Header() {
-//   const description = reactDescriptions[genRandomNum(reactDescriptions.length - 1)];
-
-//   return (
-//     <header>
-//       <img src={reactImg} alt="Stylized atom" />
-//       <h1>React Essentials</h1>
-//       <p>
-//         {description} React concepts you will need for almost any app you are
-//         going to build!
-//       </p>
-//     </header>
-//   );
-// }
-
-// function App() {
-//   return (
-//     <div>
-//       <Header />
-//       <main>
-//         <section id="core-concepts">
-//           <h2>Core Concepts</h2>
-//           <ul>
-//             <CoreConcept {...CORE_CONCEPTS[0]}/>
-//             <CoreConcept {...CORE_CONCEPTS[1]}/>
-//             <CoreConcept {...CORE_CONCEPTS[2]}/>
-//             <CoreConcept 
-//               title={CORE_CONCEPTS[3].title} 
-//               description={CORE_CONCEPTS[3].description} 
-//               image={CORE_CONCEPTS[3].image}
-//             />
-//           </ul>
-//         </section>
-//       </main>
-//     </div>
-//   );
-// }
-
-// export default App;
+export default App;
 
 
 
@@ -108,6 +74,7 @@ export default App;
 */
 
 /**** Coding Exercise 5 ****/
+/*
 export function CourseGoal({title, description}) {
   return (
     <li>
@@ -141,3 +108,4 @@ function App() {
 }
 
 export default App;
+*/

@@ -1,3 +1,34 @@
+/**** Coding Exercise 14 ****/
+// import Input from './Input';
+
+// function App() {
+//   return (
+//     <div id="content">
+//       <Input type="text" placeholder="Your name" />
+//       <Input richText placeholder="Your message" />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+/*=== input.jsx ===*/
+// export default function Input({ richText, ...props }) {
+//   // return a <textarea> if a richText prop is true
+//   // return an <input> otherwise
+//   // forward / set the received props on the returned elements
+//   console.log(props)
+//   let inputField = <input {...props} />
+  
+//   if (richText) {
+//       inputField = <textarea {...props}></textarea>
+//   }
+//   return inputField;
+// }
+
+
+
+
 /**** Coding Exercise 13 ****/
 // function Summary({ text }) {
 //   return (

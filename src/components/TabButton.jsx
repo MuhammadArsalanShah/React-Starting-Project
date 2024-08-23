@@ -3,6 +3,7 @@
 // }
 
 export default function TabButton({ children, isSelected, ...props }) {
+  <textarea></textarea>
   return (
     <li>
       <button className={isSelected ? "active" : undefined} {...props}>
@@ -10,4 +11,5 @@ export default function TabButton({ children, isSelected, ...props }) {
       </button>
     </li>
   );
+
 }

@@ -1,4 +1,4 @@
-export default function Tabs({ buttons, children, ContainerElement }) {
+export default function Tabs({ buttons, children, ContainerElement = 'menu' }) {
   return (
     <>
       <ContainerElement>{buttons}</ContainerElement>

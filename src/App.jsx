@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, Fragment } from "react";
 
 import { CORE_CONCEPTS, EXAMPLES } from "./data.js";
 import Header from "./components/Header/Header.jsx";
@@ -27,7 +27,14 @@ function App() {
   }
 
   return (
-    <div>
+    //We can use react's built in Frangment 
+    //component to get rid of unneccesary parent 
+    //elements like <div></div>
+    //<Fragment></Fragment>
+    // OR
+    //Use empty tag. its new element so we don't 
+    //need <Fragment> component
+    <>
       <Header />
       <main>
         <section id="core-concepts">
@@ -69,7 +76,7 @@ function App() {
           {tabContent}
         </section>
       </main>
-    </div>
+    </>
   );
 }
 
